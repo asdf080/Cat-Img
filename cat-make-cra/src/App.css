@@ -1,15 +1,92 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Pretendard-Regular";
+}
+
 body {
+  padding-top: 20px;
   text-align: center;
 }
-.main-card button {
-  position: relative;
-  left: -45px;
-  bottom: 15px;
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 50px;
 }
+
+form span {
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  width: 45%;
+  height: 45px;
+  padding: 4px;
+  padding-left: 15px;
+  margin: 4px;
+  font-size: 25px;
+  border: 3px solid #f39c12;
+}
+
+form input:focus {
+  background: rgb(236, 236, 236);
+  outline: none;
+}
+
+form button {
+  width: 65px;
+  height: 59px;
+  line-height: 51px;
+  margin: 4px;
+  font-size: 21px;
+  color: #f39c12;
+  border: 3px solid #f39c12;
+  background: none;
+}
+
+form button:hover {
+  cursor: pointer;
+  background: #f39c12;
+  color: white;
+}
+
+.main-card span {
+  position: relative;
+}
+
+.main-card button {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 21px;
+}
+
+.main-card button:hover {
+  cursor: pointer;
+}
+
 .favorites {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
+}
+
+#art {
+  margin-top: 15px;
+  font-size: 20px;
 }
