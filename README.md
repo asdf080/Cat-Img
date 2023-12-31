@@ -1,7 +1,7 @@
 # Cat Img Maker
 
 ### 🔗링크
-https://asdf080.github.io/Cat-Img/
+https://asdf080.github.io/Cat-Img-Maker/
 
 ### 🔎소개
 랜덤한 고양이 사진에 원하는 텍스트를 입력할 수 있는 토이 프로젝트입니다.
