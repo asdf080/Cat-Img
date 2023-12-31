@@ -32,7 +32,7 @@ form input {
   padding-left: 15px;
   margin: 4px;
   font-size: 25px;
-  border: 3px solid #f39c12;
+  border: 3px solid #5b4ed7;
 }
 
 form input:focus {
@@ -46,14 +46,14 @@ form button {
   line-height: 51px;
   margin: 4px;
   font-size: 21px;
-  color: #f39c12;
-  border: 3px solid #f39c12;
+  color: #5b4ed7;
+  border: 3px solid #5b4ed7;
   background: none;
 }
 
 form button:hover {
   cursor: pointer;
-  background: #f39c12;
+  background: #5b4ed7;
   color: white;
 }
 

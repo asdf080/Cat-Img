@@ -5,9 +5,9 @@ import { faHeart as fasHeart } from "@fortawesome/free-solid-svg-icons";
 
 const MainCard = (props) => {
   const heartIcon = props.alreadyFavo ? (
-    <FontAwesomeIcon icon={fasHeart} style={{ color: "#f39c12" }} />
+    <FontAwesomeIcon icon={fasHeart} style={{ color: "#5b4ed7" }} />
   ) : (
-    <FontAwesomeIcon icon={farHeart} style={{ color: "#f39c12" }} />
+    <FontAwesomeIcon icon={farHeart} style={{ color: "#5b4ed7" }} />
   );
   return (
     <div className="main-card">
