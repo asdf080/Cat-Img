@@ -4,6 +4,7 @@ import Title from "./components/Title";
 import Favorites from "./components/Favorites";
 import MainCard from "./components/MainCard";
 import Form from "./components/Form";
+import preImg from "./components/preImg.png";
 
 const jsonLocalStorage = {
   setItem: (key, value) => {
@@ -22,11 +23,10 @@ const fetchCat = async (text) => {
 };
 
 const App = () => {
-  const CAT1 = "https://cataas.com/cat/HSENVDU4ZMqy7KQ0/says/react";
   const [counter, setCounter] = React.useState(() => {
     return jsonLocalStorage.getItem("counter") || 0;
   });
-  const [catImg, setCatImg] = React.useState(CAT1);
+  const [catImg, setCatImg] = React.useState(preImg);
   const [favo, setFavo] = React.useState(() => {
     return jsonLocalStorage.getItem("favo") || [];
   });
@@ -44,9 +44,7 @@ const App = () => {
 
   async function updateCat(value) {
     const newCat = await fetchCat(value);
-
     setCatImg(newCat);
-
     setCounter((prev) => {
       const nextCounter = prev + 1;
       jsonLocalStorage.setItem("counter", nextCounter);
